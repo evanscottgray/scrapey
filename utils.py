@@ -5,8 +5,6 @@ from bs4 import BeautifulSoup
 
 
 def maps_encode(start, finish):
-    print start
-    print finish
     start_enc = re.sub(' ', '+', start)
     finish_enc = re.sub(' ', '+', finish)
     url = 'https://www.google.com/maps/dir/%s/%s' % (start_enc, finish_enc)
