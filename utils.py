@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 def maps_encode(start, finish):
-    start_enc = re.sub(' ', '+', start)
+    #start_enc = re.sub(' ', '+', start)
     start_enc = '1+Fanatical+Pl,+San+Antonio,+TX+78218'
     finish_enc = re.sub(' ', '+', finish)
     url = 'https://www.google.com/maps/dir/%s/%s' % (start_enc, finish_enc)

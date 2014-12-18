@@ -9,5 +9,5 @@ page.onLoadFinished = function()
         });
         console.log(html);
 	phantom.exit();
-    }, 2000);
+    }, 1000);
 };

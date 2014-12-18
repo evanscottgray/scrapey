@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def trip():
-	source = request.args.get('source', '')
-	destination = request.args.get('destination', '')
-	return json.dumps(utils.trip_stats(source, destination))
+    source = request.args.get('source', '')
+    destination = request.args.get('destination', '')
+    return json.dumps(utils.trip_stats(source, destination))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0')
